@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "perf-ex",
+  "version": "1.0",
+  "description": "Add exclude filtering to Perfherder.",
+
+  "permissions": [
+    "https://treeherder.mozilla.org/perf.html*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://treeherder.mozilla.org/perf.html*"
+      ],
+      "js": [
+        "perf-ex.js"
+      ]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "perf-ex@unmht.org",
+      "strict_min_version": "79.0"
+    }
+  }
+}
