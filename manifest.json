@@ -11,7 +11,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://treeherder.mozilla.org/perf.html*"
+        "https://treeherder.mozilla.org/perf.html*",
+        "https://treeherder.mozilla.org/perfherder/compare*"
       ],
       "js": [
         "perf-ex.js"
